@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="">
+        <link rel="stylesheet" href="#">
+        <title>Curso CSS3, SASS e SCSS</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .fundo {
+                width: 100vw;
+                height: 100vh;
+
+            }
+            .fundo > div[class^=largura] {
+                border: red solid 0.3px;
+                height: 50px;
+                margin-bottom: 2%;
+            }
+            .largura-auto {
+                width: auto;
+            }
+            .largura-vwvh {
+                width: 50vw;
+            }
+            .largura-percent {
+                width: 50%;
+            }
+            .largura-pixel {
+                width: 350px;
+            }
+            .largura-fit {
+                width: fit-content;
+            }
+            .largura-length {
+                width: length;
+                background-color: red;
+            }
+            .largura-initial {
+                width: initial;
+            }
+            .largura-inherit {
+                width: inherit;
+            }
+            .largura-max-content {
+                width: max-content;
+            }
+            .largura-min-content {
+                width: min-content;
+            }
+            .largura-revert {
+                width: revert;
+            }
+            .largura-unset {
+                width: unset;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fundo">
+            <div class="largura-auto">AUTO: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore perspiciatis ratione ipsa laboriosam. Hic, magnam temporibus optio ullam quasi, quam, tenetur ea itaque quis perspiciatis quae asperiores a fugit. Placeat.</div>
+            <div class="largura-vwvh">VWVH: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore perspiciatis ratione ipsa laboriosam. Hic, magnam temporibus optio ullam quasi, quam, tenetur ea itaque quis perspiciatis quae asperiores a fugit. Placeat.</div>
+            <div class="largura-percent">PERCENT: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore perspiciatis ratione ipsa laboriosam. Hic, magnam temporibus optio ullam quasi, quam, tenetur ea itaque quis perspiciatis quae asperiores a fugit. Placeat.</div>
+            <div class="largura-pixel">PIXEL: Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            <div class="largura-fit">FIT: Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            <div class="largura-length">LENGTH: Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            <div class="largura-initial">INITIAL: Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            <div class="largura-inherit">INHERIT: Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            <div class="largura-min-content">MIN-CONTENT: Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            <div class="largura-max-content">MAX-CONTENT: Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            <div class="largura-revert">REVERT: Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            <div class="largura-unset">UNSET: Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+        </div>
+    </body>
+ </html>

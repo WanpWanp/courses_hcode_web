@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=Edge">
+    <meta name="description" content="Curso Hcode HTML5">
+    <!--<link rel="shortcut icon" href="../img/TecGuilty_logo.png">
+    <link rel="stylesheet" href="./css/style.css">-->
+    <title>Curso HTML5</title>
+</head>
+<body>
+    
+    <ul>
+        <li data-id="1" data-email="axl@axl.com">Willian Axl</li>
+        <li data-id="2" data-email="Willian@willian.com">Wanp</li>
+    </ul>
+
+    <script>
+        document.querySelectorAll('li').forEach(liEl =>{
+            
+            console.log(liEl.dataset.id);
+            console.log(liEl.dataset.email);
+            console.log(liEl.dataset);
+            console.log("==================================");
+        });
+    </script>
+</body>
+</html>

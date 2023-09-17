@@ -1,0 +1,19 @@
+input {
+     width: 300px;
+     text-align: center;
+}
+form input {
+    border: 2px solid red;
+}
+form > input {
+    background-color: blue;
+    color: white;
+}
+form + input {
+    background-color: black;
+    color: white;
+}
+form ~ input {
+    background-color: rgb(248, 232, 5);
+    color: rgb(245, 4, 4);
+}

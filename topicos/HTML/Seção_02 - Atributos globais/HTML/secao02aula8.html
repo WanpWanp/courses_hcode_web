@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=Edge">
+        <meta name="description" content="Curso Hcode HTML5">
+        <!--<link rel="shortcut icon" href="../img/TecGuilty_logo.png">
+            <link rel="stylesheet" href="./css/style.css">-->
+            <title>Curso HTML5</title>
+            
+            <style>
+                .caixa {
+                    width: 120px;
+                    height: 120px;
+                    background-color: blue;
+                    color: aliceblue;
+                    font-size: 20px;
+                    border-top: 3px solid rgb(255, 255, 255);
+                    border-bottom: 3px solid rgb(255, 255, 255);
+                }
+                .drop {
+                    width: 200px;
+                    height: 200px;
+                    background-color: red;
+                    color: aliceblue;
+                    font-size: 20px;
+                }
+            </style>        
+    </head>
+    <body>
+        <!--<button type="button" draggable="true">Draggable</button>
+            <div class="quadrado">Undraggable</div>-->
+            <div id="1" class="caixa" draggable="true"></div>
+            <div id="2" class="caixa" draggable="true"></div>
+            
+            <div class="drop" dropzone="move">Dropzone</div>
+
+
+
+
+            <script>
+                
+                const caixas = document.querySelectorAll('.caixa');
+                const dropZone = document.querySelectorAll('[dropzone]');
+                
+                caixas.forEach(caixaEl => {
+                    caixaEl.addEventListener('dragstart', e => {
+                        e.dataTransfer.setData('text', e.target.id);
+                        console.log("Draggable_" + e.target.id);
+                    });
+                });
+
+                dropZone[0].addEventListener('dragover', e => {
+                    e.preventDefault();
+                });
+                dropZone[0].addEventListener('drop', e =>{
+
+                    const id = e.dataTransfer.getData('text');
+
+                    console.log("Drop successfully");
+                    console.log("Drop successfully: " + id);
+
+                    const element = document.getElementById(id);
+                    
+                    e.target.appendChild(element);
+
+                });
+                    
+            </script>
+    </body>
+</html>

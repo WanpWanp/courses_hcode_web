@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="#">
+        <title>Curso CSS3, SASS e SCSS</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                height: 100vh;
+            }
+            .bloco {
+                width: 20vw;
+                height: 20vw;
+                background-color: aquamarine;
+                /*margin-left: 2vw;*/
+            }
+            .bloco:first-child {
+                /*background-color: aqua;
+                margin-left: unset;*/
+            }
+            .bloco + .bloco {
+                margin-left: 2vw;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bloco"></div>
+        <div class="bloco"></div>
+        <div class="bloco"></div>
+    </body>
+ </html>

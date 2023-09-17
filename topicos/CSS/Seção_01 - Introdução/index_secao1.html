@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-Edge">
+    <link rel="shortcut icon" href="../../IMG/TecGuilty_logo.png">
+    <meta name="description" content="Curso de CSS da Hcode">
+    <link rel="stylesheet" href="./css/secao01.css">
+    <title>Curso de CSS3, SASS e SCSS</title>
+
+    <!-- ! ======================================================================================================================-->
+
+    <style>
+        #incorporado {
+            width: 75px;
+            height: 75px;
+            background-color: blue;
+            margin: 5px 5px 5px 48%;
+        }
+
+        #inline {
+            width: 75px;
+            height: 75px;
+            background-color: red;
+            margin: 5px 5px 5px 48%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="secao">
+        <div class="aula secao_inicio" name="aula_1" id="aula_1">
+            <header class="teste">
+                <h1>Header</h1>
+            </header>
+
+            <section class="teste">
+                <p>
+                    Section
+                </p>
+            </section>
+
+            <footer class="teste">
+                <p>
+                    Footer
+                </p>
+            </footer>
+        </div>
+        <div class="aula" name="aula_1" id="aula_1">
+            <header>
+                <h1>Aula_1</h1>
+            </header>
+            <section>
+                <div>
+                    <a href="./html/secao02aula1.html" target="_blank"><button>Ir para Introdução</button></a>
+                </div>
+
+            </section>
+        </div>
+        <div class="aula" name="aula_2" id="aula_2">
+            <header>
+                <h1>Aula_2 - Seletores</h1>
+            </header>
+            <section>
+                <div>
+                    <a href="./html/secao02aula2.html" target="_blank"><button>Ir para Seletores</button></a>
+                </div>
+                <p>
+                    * { (seletor universal)
+                    margin: 0;
+                    padding: 0;
+                    }
+                </p>
+                <p>
+                    body {(seletor de tipo, neste caso por tag (body))
+                    margin: 0;
+                    padding: 0;
+                    }
+                </p>
+                <p>
+                    .classe {(seletor de classe, inicia-se com um (.))
+                    margin: 0;
+                    padding: 0;
+                    }
+                </p>
+                <p>
+                    #id {(seletor de id, inicia-se com (#))
+                    margin: 0;
+                    padding: 0;
+                    }
+                </p>
+                <p>
+                    [type="teste"] {(seletor de atributo, fica entre colchete a informação do tipo e aspas duplas
+                    indicam o valor do atributo no qual o css irá agir)
+                    margin: 0;
+                    padding: 0;
+                    }
+                </p>
+                <p>
+                    :hover {(seletores pseudo, não dizemos o nome do pois já usa nomes reservados)
+                    margin: 0;
+                    padding: 0;
+                    }
+                </p>
+            </section>
+        </div>
+        <div class="aula" name="aula_3" id="aula_3">
+            <header>
+                <h1>Aula_3 - Cores</h1>
+            </header>
+            <section>
+                <div>
+                    <a href="./html/secao02aula3.html" target="_blank"><button>Ir para Cores</button></a>
+                </div>
+                <p>
+                    Nome: <span id="black">Black</span>,
+                    <span>White</span>,
+                    <span>Red</span>,
+                    <span>Green</span>,
+                    <span>Blue</span>. (Cores em inglês)
+                </p>
+                <p>
+                    RGB (Red, Green, Blue): vao de 0 a 255 o valor de cada uma das cores
+                </p>
+                <p>
+                    Hexadecimal: Usa 6 caracteres alfanumericos e inicia-se com #. O primeiro par é de vermelho, o
+                    segundo é green e o ultimo é de blue
+                </p>
+                <p>
+                    HSL: matiz, Iluminação e brilho. Hue(0 a360), Saturation(0% a 100%) e ligthness(0% a 100%)
+                </p>
+                <p>
+                    Alpha (RGBA), Hexadecimal(#RRGGBBAA) e (HSLA): Irá definir a transparência da cor. É representado
+                    pela letra a no final.
+                </p>
+            </section>
+        </div>
+        <div class="aula" name="aula_4" id="aula_4">
+            <header>
+                <h1>Aula_4 - Unidades de Medidas.</h1>
+            </header>
+            <section>
+                <div>
+                    <a href="./html/secao02aula4.html" target="_blank"><button>Ir para Unidades de Médidas</button></a>
+                </div>
+                <p>
+                    Absolutas: Centímetros (CM), Milímetros (MM), Polegadas (IN), pixels (PX), Pontos (PT), paicas (PC)
+                </p>
+                <p>
+                    Relativas: Porcentagem (%), M (em), root M (REM), unidade do caractere (CH), x (EX), Largura da
+                    janela de exibição (VW), altura da janela de exibição (VH), janela de exibição mínima (VMIN), janela
+                    de exibição máxima (VMAX), fração restante (FR)
+                </p>
+            </section>
+        </div>
+        <div class="aula" name="aula_5" id="aula_5">
+            <header>
+                <h1>Aula_5 - Entendo box model</h1>
+            </header>
+            <section>
+                <div>
+                    <a href="./html/secao02aula5.html" target="_blank"><button>Ir para Box Model</button></a>
+                </div>
+                <p class="conteudo">
+                    Conteudo
+                </p>
+            </section>
+        </div>
+        <div class="aula" name="aula_6" id="aula_6">
+            <header>
+                <h1>Aula_6 - CSS e HTML</h1>
+            </header>
+            <section>
+                <div>
+                    <a href="./html/secao02aula6.html" target="_blank"><button>Ir para CSS e HTML</button></a>
+                </div>
+                <h2>Aqui é o estilo inline (definido como atributo de uma Tag HTML)</h2>
+                <div id="inline" style="width: 75px; height: 75px; background-color: red ; margin: 5px 5px  5px 48%;">
+                </div>
+                <!-- !Para fim de teste foi comentaddo mas é util
+                    * <span style="color: aqua;">TecGuilty</span> - &lsaquo; style="color: aqua;" &rsaquo;. Aqui foi usado style como atributo dentro da tag span para personalizar somente ela. Não é uma boa prática. É a forma mais importante de prioridade do css.-->
+
+                <h2>Aqui é o estilo de CSS incorporado no HTML. Esta dentro do head nos metas dados da página.</h2>
+                <div id="incorporado"></div>
+                <p>
+                    Quando o estilo incorporado e inline (estilo de css como atribuuto de tag), o inline irá prevalecer,
+                    depois o incorporado e por ultimo o arquivo externo.
+                </p>
+                <h2>Aqui é o metodo de link para um arquivo css.</h2>
+                <div id="link"></div>
+                <p>
+                    Esta linkado um arquivo css no head, dessa forma &lsaquo; link rel="stylesheet" href="./style.css"
+                    &rsaquo;
+                </p>
+
+            </section>
+        </div>
+        <div class="aula" name="aula_7" id="aula_7">
+            <header>
+                <h1>Aula_7 - Armadilhas CSS</h1>
+            </header>
+            <section>
+                <div>
+                    <a href="./html/secao02aula7.html" target="_blank"><button>Ir para Armadilhas</button></a>
+                </div>
+                <p>
+                    Nome do arquivo: importante olhar sempre o nome de arquivo externo. No dom podemos ir ate a aba
+                    console e dai identificar o erro que será gerado. Muito provael erro de arquivo não encontrado.
+                </p>
+                <p>
+                    Atributo: Nome do atributo errado, exemplo o href escrita de forma errada, Mas diferente de um
+                    arquivo externo com nome errado, este não irá apresentar erro. Uma dica seria verificar o código
+                    fonte da página.
+                </p>
+                <p>
+                    Salvando em diretório errado: Quando se duplica o arquivo CSS em outro diretório e dai o novo
+                    arquivo fica sem estar linkado no documento HTML, isso fará com que as edições realizadas no novo
+                    CSS não sejam aplicadas no documento HTML e sim o antigo arquivo CSS
+                </p>
+                <div id="image_">
+                    <div id="image"></div>
+                    <p>
+                        Caminho do diretório: É importante saber indicar o caminho do arquivo.
+                    </p>
+                </div>
+                <div id="digitando_errado">
+                    <p>
+                        Atenção ao dar nome para class e id's. Uma única diferença irá fazer com que o css se perca.
+                        Obs: Com o id digitado corretamente tem um backgraund azul nesta div
+                    </p>
+                </div>
+                <div class="square0">
+                    <div class="square1">
+                        <p>Aqui está o exemplo de filhos_descedentes. square1 é filho_descedente de square0.</p>
+                    </div>
+                    <div>
+                        <div class="square1">
+                            <p>
+                                Square1 é filho_descedente de square0 (como um neto nesse caso)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="square3">
+                    <div class="square4">
+                        <p>
+                            Outra armadilha css é definir um bloco css declando que deve ser um filho_descedente direto.
+                            Aqui está o exemplo de filhos_descedentes. square3 é filho_descedente de square4.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="square4">
+                            <p>
+                                O Css definido para quando filho direto e somente ali como foi para square3 ser pai
+                                direto de square4 faz com que não seja aplicado neste bloco do square5, pois largura e
+                                altura estão somente para filhos direto
+                            </p>
+                            <p>
+                                Aqui é aplicado o width e height para poder mostar que o css é aplicado tambem aqui mas
+                                que ao mudar a cor no css a preferencia de css vai ser do bloco mais especifico
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="aula" name="aula_8" id="aula_8">
+            <header>
+                <h1>Aula_8 - Pratica de CSS</h1>
+            </header>
+            <section>
+                <div>
+                    <a href="./html/secao02aula8.html" target="_blank"><button>Ir para Prática</button></a>
+                </div>
+            </section>
+        </div>
+        <div class="aula" name="aula_9" id="aula_9">
+            <header>
+                <h1>Aula_9 - Introdução a position</h1>
+            </header>
+            <section>
+                <div>
+                    <a href="./html/secao02aula9.html" target="_blank"><button>Ir para Position</button></a>
+                </div>
+                <div>
+                    <p>
+                        Position Static: Como o nome sugere, define o posição quando declarado como estático.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Position fixed: Esse postion quando define deixa como fixo o conteúdo em relação a tela do
+                        navegador.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Position Absolute: Irá ficar posicionado fixo no documento em relação a um ancestral que esteja
+                        posicionado mas não estatico, mas caso não encotre nenhum ancestral posicionado ele ficará
+                        posicionado em relação ao documento e não a janela do browser.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Position Sticky: Funciona como um limitador, ou seja, ao definir esse position como sticky no
+                        topo, o scroll ao ir passando (descendo) e chegar ao position stucky o conteudo irá ficar
+                        grudado do topo sempre.
+                    </p>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </section>
+        </div>
+        <div class="aula" name="aula_10" id="aula_10">
+            <header>
+                <h1>Aula_10 - Introdução ao FlexBox </h1>
+            </header>
+            <section>
+                <div>
+                    <a href="./html/secao02aula10.html" target="_blank"><button>Ir para Flexbox</button></a>
+                </div>
+                <p>
+                    O flexbox: Flexing box module, é modulo de caixa flexivel. Temos o box model que faz com que nossos
+                    elemento fiquem em "caixas", mas com o flexbox podemos esticar essas caixas, organizar de acordo com
+                    a sua vontade, fazer o alinhamento que fique melhor visualmente.
+                    Para definir se estaremos usando colunas ou linhas, usamos a propriedade flex-direction para definir
+                    qual será o eixo principal (y, x).
+                </p>
+            </section>
+        </div>
+        <div class="aula" name="aula_11" id="aula_11">
+            <header>
+                <h1>Aula_11 - Valores Globais para Propriedades</h1>
+            </header>
+            <section>
+                <div>
+                    <a href="./html/secao02aula11.html" target="_blank"><button>Ir para Valores Globais</button></a>
+                </div>
+                <p>
+                    São valores que podemos usar em todas propriedades css, mas como toda regra tem exceção, existem
+                    alguns valores que não podem ser usados em algumas propriedades.
+                </p>
+                <p>
+                    <strong>Initial:</strong> Como o nome pode sugerir (pelo menos para esse autor), irá redefinir a
+                    propriedade escolhida para o valor inicial da mesma. Resumindo retornar ao valor padrão.
+                </p>
+
+                <p>
+                    <strong>Inherit:</strong> Esse valor irá definir os valores de um pai para seu herdeiros, pois, a
+                    maioria das propriedades não herdao os valores definidos nos pais.
+                </p>
+                <p>
+                    <strong>Unset:</strong> Esse valor irá desabilitar (desligar) a propriedade padrão.
+                </p>
+
+                <p>
+                    <strong>Revert:</strong> Exclusivo do safari, esse valor irá ter a mesma função do initial.
+                </p>
+            </section>
+        </div>
+        <div class="aula" name="aula_12" id="aula_12">
+            <header>
+                <h1>Aula_12 - Indrodução ao Grid Layout</h1>
+            </header>
+            <section>
+                <div>
+                    <a href="./html/secao02aula12.html" target="_blank"><button>Ir para Gridbox</button></a>
+                </div>
+                <p>
+                    Grid Layout um grande recurso do CSS3, foi criado para a cosntrução de layouts, especificamnete para
+                    esse fim. A sua principal função assim como do flexbox, que também foi criado com finalidade para
+                    layouts, o Grid Layout permite manipular os eixos Y e X para alinhamento, diferente do flexbox.
+                </p>
+                <p>
+                    Obs: O flexbox é sim muito util para criação dos layouts, o uso de cada uma das técnicas irá
+                    depender da necessidade e demanda
+                </p>
+
+                <p>
+                    Como mencionado o Grid Layout irá permiir um direcionamento bi-direcional, mas é sempre bom
+                    enfativar que com grandes poderes vem grandes responsabilidades, o grid layout acaba sendo um pouco
+                    mais complexo em comparação ao flexbox por causa dos enormes recurso que existe.
+                </p>
+                <p>
+                    Porque usar o grid? Diferente doque posso ficar subentendo, grid layout pode sim ser usado com
+                    outros métodos tal comoo flexbox.
+
+                </p>
+                <p>
+                    GridLayout tem alguns elementos particulares, tais como grid line que são todas as linhas do grid,
+                    mas não as linhas da borda e sim as internas. E tem o grid cells que são as celulas do elemento
+                    grid. O grid track é o conjunto de celulas agrupadas, tanto vertical quanto horizontal mas apenas um
+                    sentdo por vez. O grid area é diferente do grid track pois agrupa uma area conjunta vertical e
+                    horizontal.
+                </p>
+                <p>
+                    No grid layout existe o Gutters que seria os espaços entre as células.
+                </p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </section>
+        </div>
+        <div class="aula secao_final" name="aula_13" id="aula_13">
+            <header>
+                <h1>Aula_13 - Combinadores de Seletores</h1>
+            </header>
+            <section>
+                <div>
+                    <a href="./html/secao02aula13.html" target="_blank"><button>Ir para Seletores</button></a>
+                </div>
+                <p>
+                    Um dos tipos seris o combinador descedente, que seria o nome de dois seletores separados apenas pelo
+                    espaço.
+                </p>
+                <p>
+                    Combinador de filho direto é aquele que vem com o sinal de maior (>) entre o nome dos seletores.
+                </p>
+                <p>
+                    Combinador de irmão adjancente é aquele que vem com o sinal de adição (+).
+                </p>
+                <p>
+                    Combinador de irmão geral é aquele que vem com o sinal til (~).
+                </p>
+                <p></p>
+                <p></p>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

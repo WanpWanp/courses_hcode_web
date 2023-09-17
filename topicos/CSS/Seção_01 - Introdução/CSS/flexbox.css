@@ -1,0 +1,79 @@
+/* ! =========================================== CSS Padrão para a página. ===============================================================*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+margin: 0;
+height: 2000px;
+}
+
+/* ! =========================================== Linhas (horizontal e Vertical) ===============================================================*/
+
+.linha-vertical {
+    position: relative;
+    height: 100vh;
+    border-right: 1px solid red;
+    margin: 0 50% 0 15%;
+}
+.linha-horizontal {
+    position: relative;
+    width: 1500px;
+    border: 1px solid #000;
+    margin: -26% 0 -2px 0;
+}
+
+/* ! =========================================== P (horizontal e vertical) ===============================================================*/
+
+#linha-vertical {
+    position: relative;
+    top: -729px;
+    left: 720px;
+    padding: 1%;
+}
+#linha-horizontal {
+    position: relative;
+    right: -1500px;
+    padding: 1%;
+}
+
+/* ! =========================================== CSS BTN's Class FlexBox e animação ===============================================================*/
+
+.flexbox {
+    color: rgba(0, 0, 255, 0.795);
+    border: 3px dashed;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.25s;
+}
+.flexbox:hover, .flexbox:focus {
+    color: springgreen;
+    box-shadow: 0 0 0 50px rgba(127, 255, 133, 0.034);
+    border: 3px dashed;
+    animation: pulsar 1s;
+    -webkit-animation: pulsar 1s;
+    border-radius: 3%;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+}
+@keyframes pulsar {
+    0% {
+        border: 3px dashed;
+        box-shadow: 0 0 0 0 rgb(127, 255, 148);
+    }
+}
+
+/* ! =========================================== CSS ID Espaco ===============================================================*/
+#espaco {
+    position: sticky;
+    margin-top: 22%;
+    width: 50%;
+    height: 150px;
+    background-color: rgba(205, 210, 255, 0.404);
+    display: flex;
+}

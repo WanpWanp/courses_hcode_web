@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin: 2% 0 0 0;
+}
+header.teste {
+    background-color: orange;
+    
+}
+section.teste {
+    background-color: aqua;
+}
+footer.teste {
+    background-color: black;
+    color: aliceblue;
+}
+.secao {
+    margin-right: 0%;
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+}
+.secao_inicio {
+    padding: 0.1%;
+    border-top-style: ridge;
+    border-radius: 15% 15% 0 0;
+    -webkit-border-radius: 15% 15% 0 0;
+    -moz-border-radius: 15% 15% 0 0;
+    -ms-border-radius: 15% 15% 0 0;
+    -o-border-radius: 15% 15% 0 0;
+}
+.secao_final{
+    padding: 0.1%;
+    border-bottom-style: ridge;
+    border-radius: 0 0 15% 15%;
+    -webkit-border-radius: 0 0 15% 15%;
+    -moz-border-radius: 0 0 15% 15%;
+    -ms-border-radius: 0 0 15% 15%;
+    -o-border-radius: 0 0 15% 15%;
+}
+p > .conteudo {
+    /*box-sizing: content-box;*/
+    margin: 5px 5px  5px 48%;
+    width: 75px;
+    height: 10px;
+    padding: 2px;
+    border: 1px;
+    margin: 5px;
+}
+#link {
+    width: 75px;
+            height: 75px;
+            background-color: black ;
+            margin: 5px 5px  5px 48%;
+}
+#image_ {
+    margin-left: 33%;
+}
+#image {
+    background-image: url(../IMG/TecGuilty_logo.png);
+    width: 55%;
+    height: 500px;
+}
+#digitando_Errado {
+    /*box-sizing: content-box;*/
+    background-color: blue;
+    color: azure;
+}
+
+.square0 .square1 {
+    margin-left: 22%;
+    width: 700px;
+    height: 50px;
+    border: 1px solid;
+}
+
+.square3 > .square4 {
+    color: antiquewhite;
+    margin-left: 22%;
+    width: 700px;
+    height: 50px;
+    border: 1px solid;
+    background-color: blue;
+}
+
+.square4 {
+    background-color: rgb(0, 255, 34);
+}
