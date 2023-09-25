@@ -1,0 +1,1 @@
+console.log('Aula09 - Adicionadno varios eventos usando o split');

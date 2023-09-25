@@ -1,4 +1,56 @@
-.sectio_topics {
-    display: flex;
-    align-items: center;
+
+::-webkit-scrollbar {
+    display: none;
+}
+h2 {
+    text-align: center;
+    color: white;
+}
+.section_topics {
+    position: relative;
+}
+.topics {
+    position: absolute;
+    width: 31%;
+    height: 96vh;
+    background-color: rgba(2, 20, 122, 0.89);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.button {
+    margin: 110% 30% 0 29.6%;
+    width: 100%;
+}
+button {
+    font-size: 2em;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+button:hover {
+    margin-left: -3%;
+    font-size: 2.2em;
+    transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+}
+#topics_1 {
+    background-image: url(../../topicos/HTML/_icons/icons8-html-color/icons8-html-512.png);
+    background-position: top 50% right 100.5%;
+    top: 0;
+}
+#topics_2 {
+    background-image: url(../../topicos/CSS/_icons/icons8-css-cute-color/icons8-css-512.png);
+    background-position: top 50% left 49.5%;
+    top: 0;
+    left: 34.3%;
+}
+#topics_3 {
+    background-image: url(../../topicos/JS/_icons/icons8-javascript-cute-color/icons8-javascript-512.png);
+    background-position: top 50% left 100.5%;
+    top: 0;
+    left: 69%;
 }

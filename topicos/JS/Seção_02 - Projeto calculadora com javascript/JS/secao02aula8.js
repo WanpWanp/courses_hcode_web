@@ -1,0 +1,1 @@
+console.log('Aula07 - Adicionando eventos para se manipilar o DOM');

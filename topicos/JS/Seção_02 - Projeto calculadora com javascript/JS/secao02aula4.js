@@ -1,0 +1,1 @@
+console.log('Aula04 - Definindo que será usado o inglês no código, e usando os comandos js no DOM');
